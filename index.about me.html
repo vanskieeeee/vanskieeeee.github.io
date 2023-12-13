@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- my wed title-->
+    <title>Van Fernan D. Sasan</title>
+    <!-- this source for keyframes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+    <style>
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+    }
+       
+       .header{
+      background-color: rgb(87, 87, 87);
+      overflow: hidden;
+      justify-content: space-between;
+      padding-left: 80px;
+      padding-right: 80px;
+       }
+
+    .vanski{
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    span{
+      color: red;
+    }
+    .header ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;  
+    }
+
+    .header li{
+     float:right
+    }
+      
+    .header a{
+     display: block;
+     color: white;
+     text-decoration: none;
+     padding: 17px;
+     text-align: center;
+     margin-left: 20;
+     font-size: 18px;
+    }
+
+    .header a:hover{
+     background-color: #0473aa;
+     color: rgb(80, 10, 10);
+    }
+
+    .side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 65vh;
+        }
+
+
+              /* body style*/
+        *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  background: #e6e6e6b8;
+  transform: rotate(45deg);
+}
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+.card_image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+.card_content {
+  padding: 1.2rem;
+}
+
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+h2.card_title {
+    font-size: 1.3em;
+}
+body {
+  font-family:monospace;
+  background:#eee;
+}
+
+html {
+  font-size:15px;
+}
+
+
+
+
+            /* footer style*/
+        footer {
+            background-color: #0d1425;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+            /* footer p tag style */
+        footer p {
+            text-align: center;
+            margin-left: 15px;
+        }
+       
+            
+    </style>    
+
+<body>
+    <header class="header">
+    <h2 class="vanski">van<span>ski</span></h2>
+    <nav class="navbar"></nav>
+    <ul> <li><a href="index.home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="flex.html">FLEX</a></li>
+    </ul>
+    </nav>
+    </header>
+    
+    
+    
+    <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="img/Skills.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Skills &#x2022; </h2>
+                <div class="card_text">
+                  <p>My skills are playing guitar, swimming, I also can move my ears using my veins, and sleeping.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+      
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="img/Hobbies.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">My hobbies &#x2022; </h2>
+                <div class="card_text">
+                  <p>My hobbies are playing instruments, playing online games, and I also read books.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="img/Favs.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title"> My favs &#x2022; </h2>
+                <div class="card_text">
+                  <p>Eating combo, ice cream, Bondings, and I also like color blue.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+</body>
+    <!--my footer-->
+<footer>
+        <p>Credits Van Fernan D. Sasan 2023</p>
+</footer>
+   
+</html>
